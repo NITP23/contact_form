@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form onsubmit="sendEmail(); reset(); return false;">
+    <div class="main">
+   
+        <div class="content_left">
+            <div>
+               <h2>Fill Your Contact_Form </h2>
+            </div>
+            <hr>
+            <div class="boxes">
+            <input type="text" name="name" id="name" placeholder="Enter your Name..." autocomplete="off" required>
+            <input type="email" name="email" id="email" placeholder="Email address" autocomplete="off" required>
+            <textarea name="messages" id="message" placeholder="write your message here..." autocomplete="off" required></textarea>
+            <button type="submit"
+            >Submit</button>
+           </div>
+        </div>
+        <div class="content_right">
+            <!-- <img src="image2.avif" alt="Emailbox"> -->
+        </div>
+    
+    </div>
+    </form>
+    <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

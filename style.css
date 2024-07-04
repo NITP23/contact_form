@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #E49BFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h1{
+   text-align: center;
+   margin-top: 200px;
+   font-size: 60px;
+}
+.main{
+   
+    margin-top:30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 90px;
+}
+.content_left{
+    padding-left: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    overflow: auto;
+    resize: both;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+
+}
+input{
+    border-radius: 6px;
+    margin:10px;
+    padding: 3px;
+    border: none;
+    height: 30px;
+    font-size: 12px;
+}
+input:focus-within{
+    outline: none;
+    border-color: blueviolet;
+    border-width: 3px;
+}
+
+textarea{
+    height:80px;
+    margin: 10px;
+   
+    padding: 3px;
+    border: none;
+    /* overflow-y: scroll;
+    scroll-snap-align: x mandatory; */
+    border-radius :6px;
+    font-size: 12px;
+}
+textarea:focus-within{
+    outline: none;
+    border-color: blueviolet;
+    border-width: 3px;
+}
+button{
+    height: 30px;
+    width: 80px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, rgb(106, 37, 185) , rgb(218, 125, 236));
+    cursor: pointer;
+    color:white ;
+    margin:10px auto 0;
+    
+}
+.content_right{
+    height: 15rem;
+    width:15rem;
+    padding:10 auto;
+    box-shadow: 3px 5px 10px 3px black ;
+    background-image: url("image2.avif");
+    background-size: cover;
+    border-radius: 6px;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width:360px) {
+    .content_right{
+        display:none;
+    }
+}
+    
+/* .container{
+    height: 100vh;
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input{
+    height: 2rem;
+    width:10rem;
+    border-radius: 10px;
+}
+textarea{
+    height: 4rem;
+    width:10rem;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 3px;
+}
+b
